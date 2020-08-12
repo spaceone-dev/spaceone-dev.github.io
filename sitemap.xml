@@ -21,6 +21,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://developer.spaceone.dev/api/getting-started/</loc>
+     <lastmod>2020-08-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://developer.spaceone.dev/core/getting-started/</loc>
      <lastmod>2020-08-12</lastmod>
      <changefreq>daily</changefreq>
