@@ -180,7 +180,7 @@
             <div class="section">
               
                 <p>Developer Guideline</p>
-<h1 id="create-new-api-spec-file">Create new API spec file<a class="headerlink" href="#create-new-api-spec-file" title="Permanent link">#</a></h1>
+<h3 id="create-new-api-spec-file">Create new API spec file<a class="headerlink" href="#create-new-api-spec-file" title="Permanent link">#</a></h3>
 <p>Create new API spec file for new micro service.
 The file location must be </p>
 <pre><code class="bash">proto/spaceone/api/&lt;new service name&gt;/&lt;version&gt;/&lt;API spec file&gt;
@@ -214,7 +214,7 @@ The file location must be </p>
 </code></pre>
 
 <p>If you create new micro service called sample, create a directory <strong><em>proto/spaceone/api/sample/v1</em></strong></p>
-<h1 id="define-api">Define API<a class="headerlink" href="#define-api" title="Permanent link">#</a></h1>
+<h3 id="define-api">Define API<a class="headerlink" href="#define-api" title="Permanent link">#</a></h3>
 <p>After creating API spec file, update gRPC protobuf.</p>
 <p>The content consists with two sections.
 + service
@@ -242,8 +242,13 @@ message HelloReply {
 }
 </code></pre>
 
-<h1 id="build-api-spec-to-specific-language">Build API spec to specific language.<a class="headerlink" href="#build-api-spec-to-specific-language" title="Permanent link">#</a></h1>
+<h3 id="build-api-spec-to-specific-language">Build API spec to specific language.<a class="headerlink" href="#build-api-spec-to-specific-language" title="Permanent link">#</a></h3>
 <p>Protobuf can not be used directly, it must be translated to target langauge like python or Go.</p>
+<p>If you create new micro service directory, udpate <strong><em>Makefile</em></strong>
+Append directory name at TARGET</p>
+<pre><code>TARGET = core identity repository plugin secret inventory monitoring statistics config report sample
+</code></pre>
+
 <p>Currently API supports python output.</p>
 <pre><code class="bash">make python
 </code></pre>
@@ -298,11 +303,6 @@ message HelloReply {
                     ├── __init__.py
                     ├── helloworld_pb2.py
                     └── helloworld_pb2_grpc.py
-</code></pre>
-
-<p>If you create new micro service directory, udpate <strong><em>Makefile</em></strong></p>
-<p>Append directory name at TARGET</p>
-<pre><code>TARGET = core identity repository plugin secret inventory monitoring statistics config report sample
 </code></pre>
               
             </div>
