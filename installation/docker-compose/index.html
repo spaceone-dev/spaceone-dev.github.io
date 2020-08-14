@@ -11,7 +11,7 @@
         <meta name="description" content="SpaceONE Developer Guides">
       
       
-        <link rel="canonical" href="https://developer.spaceone.dev/architecture/console-framework/">
+        <link rel="canonical" href="https://developer.spaceone.dev/installation/docker-compose/">
       
       
         <meta name="author" content="SpaceONE Team">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Console Framework - SpaceONE Developer Guides</title>
+        <title>Docker Compose - SpaceONE Developer Guides</title>
       
     
     
@@ -55,7 +55,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#console-framework" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -83,7 +83,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Console Framework
+              Docker Compose
             
           </span>
         </div>
@@ -167,12 +167,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Achitecture design
@@ -196,7 +194,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../msa-framework/" title="MSA Framework" class="md-nav__link">
+    <a href="../../architecture/msa-framework/" title="MSA Framework" class="md-nav__link">
       MSA Framework
     </a>
   </li>
@@ -206,20 +204,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Console Framework" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../architecture/console-framework/" title="Console Framework" class="md-nav__link">
       Console Framework
     </a>
-    
   </li>
 
         
@@ -229,7 +218,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../plugins/" title="Plugins" class="md-nav__link">
+    <a href="../../architecture/plugins/" title="Plugins" class="md-nav__link">
       Plugins
     </a>
   </li>
@@ -244,10 +233,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Installation
@@ -269,11 +260,104 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../installation/docker-compose/" title="Docker Compose" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Docker Compose
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Docker Compose" class="md-nav__link md-nav__link--active">
       Docker Compose
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-update-dns-for-web-browser-access" class="md-nav__link">
+    1. Update DNS for web browser access.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-guides" class="md-nav__link">
+    Development guides
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    Configurations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-history" class="md-nav__link">
+    Release History
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    Contributing
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -283,7 +367,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../installation/helm.md" title="Helm Chart" class="md-nav__link">
+    <a href="../helm.md" title="Helm Chart" class="md-nav__link">
       Helm Chart
     </a>
   </li>
@@ -524,8 +608,78 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-update-dns-for-web-browser-access" class="md-nav__link">
+    1. Update DNS for web browser access.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-guides" class="md-nav__link">
+    Development guides
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    Configurations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-history" class="md-nav__link">
+    Release History
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    Contributing
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -541,8 +695,99 @@
                   
                 
                 
-                <h1 id="console-framework">Console Framework<a class="headerlink" href="#console-framework" title="Permanent link">#</a></h1>
-<p>Console is developed with Vue.js and Node.js</p>
+                  <h1>Docker Compose</h1>
+                
+                <p>SpaceONE Docker-Compose Installer</p>
+<blockquote>
+<p>a <a href="https://github.com/spaceone-dev">SpaceONE</a> docker-compose to deploy <a href="https://github.com/spaceone-dev">SpaceONE</a> on Docker. </p>
+</blockquote>
+<p>Manage your infrastructure with SpaceONE. It doesn't matter what your infrastructure is based on. SpaceONE supports AWS, GCP, Azure, IDC, ...etc.</p>
+<p><img alt="preview" src="https://helm.stargate.spaceone.dev/media/preview.png" /></p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
+<p>This installation is for developer only.</p>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">#</a></h3>
+<ul>
+<li><code>docker</code></li>
+<li><code>docker-compose</code> </li>
+</ul>
+<h3 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">#</a></h3>
+<pre><code class="bash">mkdir spaceone
+cd spaceone
+git clone https://github.com/spaceone-dev/spaceone-dockercompose.git
+cd spaceone-dockercompose
+</code></pre>
+
+<p>Base on your deploy environment,
+You should update environment variables at build-data/environment/debug.mk
+Especially <strong>SUPERVISOR_HOSTNAME</strong> is important. This value is configured at supervisor micro-service.</p>
+<pre><code>############################
+# Docker Image Registry
+#############################
+IMAGE_REGISTRY=spaceone
+VERSION=latest
+
+############################
+# Update Your environment
+# - supervisor (private ip address of this machine)
+# MacOS
+#SUPERVISOR_HOSTNAME=$(shell ipconfig getifaddr en0)
+# Linux
+SUPERVISOR_HOSTNAME=$(shell hostname -i)
+
+############################
+# Service List
+############################
+BACKEND = identity secret repository inventory inventory-scheduler inventory-worker plugin statistics monitoring
+FRONTEND = console console-api
+SUPERVISOR = supervisor
+TESTER = tester
+
+############################
+# Running List
+############################
+RUN_MONGODB = y
+RUN_REDIS = y
+RUN_VAULT = y
+RUN_CONSUL = y
+RUN_BACKEND = y
+RUN_FRONTEND = y
+RUN_SUPERVISOR = y
+RUN_TESTER = y
+</code></pre>
+
+<p>In the repository root directory, install SpaceONE.</p>
+<pre><code class="bash">$ make all
+</code></pre>
+
+<h3 id="1-update-dns-for-web-browser-access">1. Update DNS for web browser access.<a class="headerlink" href="#1-update-dns-for-web-browser-access" title="Permanent link">#</a></h3>
+<p>edit your hosts file for access.</p>
+<p>In Linux PC or MacOS, edit /etc/hosts
+In Windows PC, edit c:\windows\system32\drivers\etc\hosts</p>
+<pre><code>#
+# Elastic IP address, if you installed at EC2 instance.
+# &lt;EC2 EIP&gt; root
+# If you use MacOS, use 127.0.0.1
+127.0.0.1 root
+</code></pre>
+
+<p>You can see the console page via http://root:8280</p>
+<h2 id="development-guides">Development guides<a class="headerlink" href="#development-guides" title="Permanent link">#</a></h2>
+<p>This will be appended soon.</p>
+<h2 id="configurations">Configurations<a class="headerlink" href="#configurations" title="Permanent link">#</a></h2>
+<p>This will be appended soon.</p>
+<h2 id="release-history">Release History<a class="headerlink" href="#release-history" title="Permanent link">#</a></h2>
+<ul>
+<li>0.1.0</li>
+<li>Initial version.</li>
+</ul>
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">#</a></h2>
+<ol>
+<li>Fork it (https://github.com/spaceone/spaceone-dockercompose)</li>
+<li>Create your branch (<code>git checkout -b foo</code>)</li>
+<li>Commit your changes</li>
+<li>Push to your branch</li>
+<li>Create a new Pull Request (https://github.com/spaceone/spaceone-dockercompose)</li>
+</ol>
                 
               
               
@@ -561,7 +806,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../msa-framework/" title="MSA Framework" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../architecture/plugins/" title="Plugins" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -570,19 +815,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                MSA Framework
+                Plugins
               </div>
             </div>
           </a>
         
         
-          <a href="../plugins/" title="Plugins" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../api/getting-started/" title="Getting Started" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Plugins
+                Getting Started
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

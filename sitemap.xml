@@ -1,51 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://developer.spaceone.dev/introduction/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/architecture/msa-framework/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/architecture/console-framework/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/architecture/plugins/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://developer.spaceone.dev/installation/docker-compose/</loc>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/api/getting-started/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/core/getting-started/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/core/coding-style/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/console/getting-started/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/console/coding-style/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/plugins/getting-started/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/plugins/coding-style/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://developer.spaceone.dev/api/</loc>
-     <lastmod>2020-08-12</lastmod>
+     <lastmod>2020-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
