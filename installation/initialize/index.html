@@ -21,7 +21,7 @@
     
     
       
-        <title>Root domain initialize - SpaceONE Developer Guides</title>
+        <title>Root Domain Initialization - SpaceONE Developer Guides</title>
       
     
     
@@ -55,7 +55,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-initialize-root-domain" class="md-skip">
+        <a href="#register-market-place" class="md-skip">
           Skip to content
         </a>
       
@@ -83,7 +83,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Root domain initialize
+              Root Domain Initialization
             
           </span>
         </div>
@@ -495,12 +495,41 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Root Domain Initialization
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
     
-    <a href="./" title="Root domain initialize" class="md-nav__link md-nav__link--active">
-      Root domain initialize
+    <a href="./" title="Root Domain Initialization" class="md-nav__link md-nav__link--active">
+      Root Domain Initialization
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#register-market-place" class="md-nav__link">
+    Register Market-Place
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -536,8 +565,23 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#register-market-place" class="md-nav__link">
+    Register Market-Place
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -553,13 +597,49 @@
                   
                 
                 
-                <h1 id="how-to-initialize-root-domain">How to initialize Root domain<a class="headerlink" href="#how-to-initialize-root-domain" title="Permanent link">#</a></h1>
-<p>Root domain is SpaceONE management domain like
-* providing Market-place repository
-* providing public supervisor</p>
-<h1 id="register-market-place">Register Market-Place<a class="headerlink" href="#register-market-place" title="Permanent link">#</a></h1>
-<h2 id="create-secret">Create Secret<a class="headerlink" href="#create-secret" title="Permanent link">#</a></h2>
-<h2 id="register-market-place_1">Register Market-place<a class="headerlink" href="#register-market-place_1" title="Permanent link">#</a></h2>
+                  <h1>Root Domain Initialization</h1>
+                
+                <p>How to initialize Root domain</p>
+<p>Root domain is SpaceONE management domain which provides</p>
+<ul>
+<li>Market-place repository</li>
+<li>public supervisor for running various plugins</li>
+</ul>
+<h3 id="register-market-place">Register Market-Place<a class="headerlink" href="#register-market-place" title="Permanent link">#</a></h3>
+<p>To register market-place at repository service. You needs two steps.</p>
+<ol>
+<li>Save market-place API key at secret service</li>
+<li>Register market-place at repository service</li>
+</ol>
+<p><em>Save market-place API key</em></p>
+<p>You can get market-place API key from SpaceONE admin.
+Request maket-place API key to support@spaceone.dev</p>
+<p>After download market-place API key(api_key.yml), run spacectl like</p>
+<pre><code class="bash">spacectl exec create secret.Secret -p domain_id=&lt;ROOT_DOMAIN_ID&gt; \
+-p name=market-place-API-KEY -p secret_type=CREDENTIALS \
+-f api_key.yml
+</code></pre>
+
+<p>Example</p>
+<pre><code>$ spacectl exec create secret.Secret -p domain_id=domain-c77329f5d06d -p name=market-place-api-token -p secret_type=CREDENTIALS -f api_key.yml
+---
+created_at: '2020-10-22T03:31:57.857244Z'
+domain_id: domain-c77329f5d06d
+name: market-place-api-token
+secret_id: secret-a3958a210654
+secret_type: CREDENTIALS
+tags: {}
+</code></pre>
+
+<p>Remember secret_id from above command</p>
+<p><em>Register Market-place</em></p>
+<p>Register market-place</p>
+<pre><code class="bash">spacectl exec register repository.Repository -p domain_id=&lt;ROOT_DOMAIN_ID&gt; -p name=Marketplace \
+-p repository_type=remote \
+-p endpoint=grpc://repository.portal.dev.spaceone.dev:50051 \
+-p version=v1 \
+-p secret_id=&lt;Above SECRET_ID&gt;
+</code></pre>
                 
               
               
