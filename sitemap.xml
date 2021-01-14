@@ -1,46 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>https://developer.spaceone.dev/introduction/</loc>
+     <loc>https://spaceone-dev.github.io/introduction/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://developer.spaceone.dev/architecture/msa-framework/</loc>
+     <loc>https://spaceone-dev.github.io/architecture/msa-framework/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://developer.spaceone.dev/architecture/console-framework/</loc>
+     <loc>https://spaceone-dev.github.io/architecture/console-framework/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://developer.spaceone.dev/architecture/plugins/</loc>
+     <loc>https://spaceone-dev.github.io/architecture/plugins/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://developer.spaceone.dev/core/getting-started/</loc>
+     <loc>https://spaceone-dev.github.io/api/getting-started/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://developer.spaceone.dev/core/coding-style/</loc>
+     <loc>https://spaceone-dev.github.io/core/getting-started/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://developer.spaceone.dev/core/inventory/</loc>
+     <loc>https://spaceone-dev.github.io/core/scheduler_and_worker/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://developer.spaceone.dev/console/getting-started/</loc>
+     <loc>https://spaceone-dev.github.io/core/coding-style/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://developer.spaceone.dev/console/coding-style/</loc>
+     <loc>https://spaceone-dev.github.io/core/inventory/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://developer.spaceone.dev/plugins/getting-started/</loc>
+     <loc>https://spaceone-dev.github.io/console/getting-started/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://developer.spaceone.dev/api/</loc>
+     <loc>https://spaceone-dev.github.io/console/coding-style/</loc>
+     <lastmod>2021-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://spaceone-dev.github.io/plugins/getting-started/</loc>
+     <lastmod>2021-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://spaceone-dev.github.io/plugins/coding-style/</loc>
+     <lastmod>2021-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://spaceone-dev.github.io/installation/docker-compose/</loc>
+     <lastmod>2021-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://spaceone-dev.github.io/installation/initialize/</loc>
+     <lastmod>2021-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://spaceone-dev.github.io/api/</loc>
      <lastmod>2021-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url>

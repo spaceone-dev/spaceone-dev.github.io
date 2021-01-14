@@ -11,7 +11,7 @@
         <meta name="description" content="SpaceONE Developer Guides">
       
       
-        <link rel="canonical" href="https://spaceone-dev.github.io/core/getting-started/">
+        <link rel="canonical" href="https://spaceone-dev.github.io/api/getting-started/">
       
       
         <meta name="author" content="SpaceONE Team">
@@ -55,7 +55,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-fork-in-the-cloud" class="md-skip">
+        <a href="#1-create-new-api-spec-file" class="md-skip">
           Skip to content
         </a>
       
@@ -233,10 +233,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       API developement
@@ -250,50 +252,6 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
         API developement
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../api/getting-started/" title="Getting Started" class="md-nav__link">
-      Getting Started
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
-    
-    <label class="md-nav__link" for="nav-4">
-      Core development
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Core development" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Core development
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -335,43 +293,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-fork-in-the-cloud" class="md-nav__link">
-    1. Fork in the cloud
+  <a href="#1-create-new-api-spec-file" class="md-nav__link">
+    1. Create new API spec file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-clone-fork-to-local-storage" class="md-nav__link">
-    2. Clone fork to local storage
+  <a href="#2-define-api" class="md-nav__link">
+    2. Define API
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-branch" class="md-nav__link">
-    3. Branch
+  <a href="#3-build-api-spec-to-specific-language" class="md-nav__link">
+    3. Build API spec to specific language.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-commit" class="md-nav__link">
-    5. Commit
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-push" class="md-nav__link">
-    6. Push
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-create-a-pull-request" class="md-nav__link">
-    7. Create a pull request
+  <a href="#4-references" class="md-nav__link">
+    4. References
   </a>
   
 </li>
@@ -383,13 +327,55 @@
   </li>
 
         
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Core development
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Core development" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Core development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
           
           
 
 
   <li class="md-nav__item">
-    <a href="../scheduler_and_worker/" title="Scheduler & Worker" class="md-nav__link">
+    <a href="../../core/getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../core/scheduler_and_worker/" title="Scheduler & Worker" class="md-nav__link">
       Scheduler & Worker
     </a>
   </li>
@@ -401,7 +387,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../coding-style/" title="Coding Style" class="md-nav__link">
+    <a href="../../core/coding-style/" title="Coding Style" class="md-nav__link">
       Coding Style
     </a>
   </li>
@@ -413,7 +399,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../inventory/" title="Inventory" class="md-nav__link">
+    <a href="../../core/inventory/" title="Inventory" class="md-nav__link">
       Inventory
     </a>
   </li>
@@ -592,7 +578,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../api/" title="API References" class="md-nav__link">
+    <a href="../" title="API References" class="md-nav__link">
       API References
     </a>
   </li>
@@ -622,43 +608,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-fork-in-the-cloud" class="md-nav__link">
-    1. Fork in the cloud
+  <a href="#1-create-new-api-spec-file" class="md-nav__link">
+    1. Create new API spec file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-clone-fork-to-local-storage" class="md-nav__link">
-    2. Clone fork to local storage
+  <a href="#2-define-api" class="md-nav__link">
+    2. Define API
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-branch" class="md-nav__link">
-    3. Branch
+  <a href="#3-build-api-spec-to-specific-language" class="md-nav__link">
+    3. Build API spec to specific language.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-commit" class="md-nav__link">
-    5. Commit
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-push" class="md-nav__link">
-    6. Push
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-create-a-pull-request" class="md-nav__link">
-    7. Create a pull request
+  <a href="#4-references" class="md-nav__link">
+    4. References
   </a>
   
 </li>
@@ -681,59 +653,138 @@
                 
                   <h1>Getting Started</h1>
                 
-                <p>Development workflow</p>
-<p><img alt="" src="../github_workflow.png" /></p>
-<h3 id="1-fork-in-the-cloud">1. Fork in the cloud<a class="headerlink" href="#1-fork-in-the-cloud" title="Permanent link">#</a></h3>
-<ol>
-<li>Visit https://github.com/spaceone-dev</li>
-<li>There are lots of repositories. <em>spaceone</em> is top repository. Each micro service has own repository like <em>identity</em>, or <em>inventory</em>.</li>
-<li>Click 'Fork' button (top right) to establish a cloud-based fork.</li>
-</ol>
-<h3 id="2-clone-fork-to-local-storage">2. Clone fork to local storage<a class="headerlink" href="#2-clone-fork-to-local-storage" title="Permanent link">#</a></h3>
-<p>Create your clone:</p>
-<pre><code class="sh">git clone https://github.com/$user/spaceone.git
-cd  spaceone
+                <p>Developer Guideline</p>
+<p>This guide explains the new API spec which extends the <strong><em>spaceone-api</em></strong>.</p>
+<pre><code class="bash">git clone https://github.com/spaceone-dev/api.git
 </code></pre>
 
-<h3 id="3-branch">3. Branch<a class="headerlink" href="#3-branch" title="Permanent link">#</a></h3>
-<p>Add upstream:</p>
-<pre><code class="sh">git remote add upstream https://github.com/spaceone-dev/spaceone.git
-
-# Never push to upstream master
-git remote set-url --push upstream no_push
-
-# Confirm that your remotes make sense:
-git remote -v
+<h2 id="1-create-new-api-spec-file">1. Create new API spec file<a class="headerlink" href="#1-create-new-api-spec-file" title="Permanent link">#</a></h2>
+<p>Create new API spec file for new micro service.
+The file location must be </p>
+<pre><code class="bash">proto/spaceone/api/&lt;new service name&gt;/&lt;version&gt;/&lt;API spec file&gt;
 </code></pre>
 
-<p>Get your local master up to date:</p>
-<pre><code class="sh">git fetch upstream
-git checkout master
-git rebase upstream/master
+<p>For example, the APIs in inventory service is defined at </p>
+<pre><code class="bash">proto
+└── spaceone
+    └── api
+        ├── core
+        │   └── v1
+        │       ├── handler.proto
+        │       ├── plugin.proto
+        │       ├── query.proto
+        │       └── server_info.proto
+        ├── inventory
+        │   ├── plugin
+        │   │   └── collector.proto
+        │   └── v1
+        │       ├── cloud_service.proto
+        │       ├── cloud_service_type.proto
+        │       ├── collector.proto
+        │       ├── job.proto
+        │       ├── job_task.proto
+        │       ├── region.proto
+        │       ├── server.proto
+        │       └── task_item.proto
+        └── sample
+            └── v1
+                └── helloworld.proto
 </code></pre>
 
-<p>Branch from it:</p>
-<pre><code class="sh">git checkout -b myfeature
+<p>If you create new micro service called sample, create a directory <strong><em>proto/spaceone/api/sample/v1</em></strong></p>
+<h2 id="2-define-api">2. Define API<a class="headerlink" href="#2-define-api" title="Permanent link">#</a></h2>
+<p>After creating API spec file, update gRPC protobuf.</p>
+<p>The content consists with two sections.
++ service
++ messages</p>
+<p><strong><em>service</em></strong> defines the RPC method  and <strong><em>message</em></strong> defines the request and response data structure.</p>
+<pre><code class="bash">syntax = &quot;proto3&quot;;
+
+package spaceone.api.sample.v1;
+
+// desc: The greeting service definition.
+service HelloWorld {
+  // desc: Sends a greeting
+  rpc say_hello (HelloRequest) returns (HelloReply) {}
+}
+
+// desc: The request message containing the user's name.
+message HelloRequest {
+  // is_required: true
+  string name = 1;
+}
+
+// desc: The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}
 </code></pre>
 
-<h3 id="5-commit">5. Commit<a class="headerlink" href="#5-commit" title="Permanent link">#</a></h3>
-<p>Commit your changes.</p>
-<pre><code class="sh">git add &lt;changed files&gt;
-git commit -s
+<h2 id="3-build-api-spec-to-specific-language">3. Build API spec to specific language.<a class="headerlink" href="#3-build-api-spec-to-specific-language" title="Permanent link">#</a></h2>
+<p>Protobuf can not be used directly, it must be translated to target langauge like python or Go.</p>
+<p>If you create new micro service directory, udpate <strong><em>Makefile</em></strong>
+Append directory name at TARGET</p>
+<pre><code>TARGET = core identity repository plugin secret inventory monitoring statistics config report sample
 </code></pre>
 
-<p>Likely you go back and edit/build/test some more then 'commit --amend' in a few cycles.</p>
-<h3 id="6-push">6. Push<a class="headerlink" href="#6-push" title="Permanent link">#</a></h3>
-<p>When ready to review (or just to establish an offsite backup of your work),
-push your branch to your fork on <code>github.com</code>:</p>
-<pre><code class="sh">git push -f origin myfeature
+<p>Currently API supports python output.</p>
+<pre><code class="bash">make python
 </code></pre>
 
-<h3 id="7-create-a-pull-request">7. Create a pull request<a class="headerlink" href="#7-create-a-pull-request" title="Permanent link">#</a></h3>
-<ol>
-<li>Visit your fork at <code>https://github.com/$user/spaceone</code></li>
-<li>Click the <code>Crete pull request</code> button</li>
-</ol>
+<p>The generated python output is located at dist/python directory.</p>
+<pre><code class="bash">dist
+└── python
+    ├── setup.py
+    └── spaceone
+        ├── __init__.py
+        └── api
+            ├── __init__.py
+            ├── core
+            │   ├── __init__.py
+            │   └── v1
+            │       ├── __init__.py
+            │       ├── handler_pb2.py
+            │       ├── handler_pb2_grpc.py
+            │       ├── plugin_pb2.py
+            │       ├── plugin_pb2_grpc.py
+            │       ├── query_pb2.py
+            │       ├── query_pb2_grpc.py
+            │       ├── server_info_pb2.py
+            │       └── server_info_pb2_grpc.py
+            ├── inventory
+            │   ├── __init__.py
+            │   ├── plugin
+            │   │   ├── __init__.py
+            │   │   ├── collector_pb2.py
+            │   │   └── collector_pb2_grpc.py
+            │   └── v1
+            │       ├── __init__.py
+            │       ├── cloud_service_pb2.py
+            │       ├── cloud_service_pb2_grpc.py
+            │       ├── cloud_service_type_pb2.py
+            │       ├── cloud_service_type_pb2_grpc.py
+            │       ├── collector_pb2.py
+            │       ├── collector_pb2_grpc.py
+            │       ├── job_pb2.py
+            │       ├── job_pb2_grpc.py
+            │       ├── job_task_pb2.py
+            │       ├── job_task_pb2_grpc.py
+            │       ├── region_pb2.py
+            │       ├── region_pb2_grpc.py
+            │       ├── server_pb2.py
+            │       ├── server_pb2_grpc.py
+            │       ├── task_item_pb2.py
+            │       └── task_item_pb2_grpc.py
+            └── sample
+                ├── __init__.py
+                └── v1
+                    ├── __init__.py
+                    ├── helloworld_pb2.py
+                    └── helloworld_pb2_grpc.py
+</code></pre>
+
+<h2 id="4-references">4. References<a class="headerlink" href="#4-references" title="Permanent link">#</a></h2>
+<p><a href="https://developers.google.com/protocol-buffers/docs/proto3">Google Protobuf</a> https://developers.google.com/protocol-buffers/docs/proto3</p>
                 
               
               
@@ -752,7 +803,7 @@ push your branch to your fork on <code>github.com</code>:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../api/getting-started/" title="Getting Started" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../architecture/plugins/" title="Plugins" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -761,19 +812,19 @@ push your branch to your fork on <code>github.com</code>:</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Getting Started
+                Plugins
               </div>
             </div>
           </a>
         
         
-          <a href="../scheduler_and_worker/" title="Scheduler & Worker" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../core/getting-started/" title="Getting Started" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Scheduler & Worker
+                Getting Started
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

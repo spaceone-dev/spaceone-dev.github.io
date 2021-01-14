@@ -11,7 +11,7 @@
         <meta name="description" content="SpaceONE Developer Guides">
       
       
-        <link rel="canonical" href="https://spaceone-dev.github.io/core/getting-started/">
+        <link rel="canonical" href="https://spaceone-dev.github.io/core/scheduler_and_worker/">
       
       
         <meta name="author" content="SpaceONE Team">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Getting Started - SpaceONE Developer Guides</title>
+        <title>Scheduler & Worker - SpaceONE Developer Guides</title>
       
     
     
@@ -55,7 +55,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-fork-in-the-cloud" class="md-skip">
+        <a href="#1-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -83,7 +83,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Getting Started
+              Scheduler & Worker
             
           </span>
         </div>
@@ -302,6 +302,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -311,14 +323,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Getting Started
+        Scheduler & Worker
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="Getting Started" class="md-nav__link md-nav__link--active">
-      Getting Started
+    <a href="./" title="Scheduler & Worker" class="md-nav__link md-nav__link--active">
+      Scheduler & Worker
     </a>
     
       
@@ -335,43 +347,83 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-fork-in-the-cloud" class="md-nav__link">
-    1. Fork in the cloud
+  <a href="#1-architecture" class="md-nav__link">
+    1. Architecture
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-clone-fork-to-local-storage" class="md-nav__link">
-    2. Clone fork to local storage
+  <a href="#2-example-configuration" class="md-nav__link">
+    2. Example configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Example configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scheduler-configuration" class="md-nav__link">
+    Scheduler configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worker-configuration" class="md-nav__link">
+    Worker configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-start-scheduler-or-worker" class="md-nav__link">
+    3. Start Scheduler or Worker
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-branch" class="md-nav__link">
-    3. Branch
+  <a href="#4-scheduler-development" class="md-nav__link">
+    4. Scheduler Development
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Scheduler Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scheduler-class" class="md-nav__link">
+    Scheduler Class
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-inventoryhourlyscheduler" class="md-nav__link">
+    Example: InventoryHourlyScheduler
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-spaceone-template-pipeline" class="md-nav__link">
+    4. SpaceONE Template Pipeline
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-commit" class="md-nav__link">
-    5. Commit
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-push" class="md-nav__link">
-    6. Push
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-create-a-pull-request" class="md-nav__link">
-    7. Create a pull request
+  <a href="#5-worker-development" class="md-nav__link">
+    5. Worker Development
   </a>
   
 </li>
@@ -380,18 +432,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../scheduler_and_worker/" title="Scheduler & Worker" class="md-nav__link">
-      Scheduler & Worker
-    </a>
   </li>
 
         
@@ -622,43 +662,83 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-fork-in-the-cloud" class="md-nav__link">
-    1. Fork in the cloud
+  <a href="#1-architecture" class="md-nav__link">
+    1. Architecture
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-clone-fork-to-local-storage" class="md-nav__link">
-    2. Clone fork to local storage
+  <a href="#2-example-configuration" class="md-nav__link">
+    2. Example configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Example configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scheduler-configuration" class="md-nav__link">
+    Scheduler configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worker-configuration" class="md-nav__link">
+    Worker configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-start-scheduler-or-worker" class="md-nav__link">
+    3. Start Scheduler or Worker
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-branch" class="md-nav__link">
-    3. Branch
+  <a href="#4-scheduler-development" class="md-nav__link">
+    4. Scheduler Development
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Scheduler Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scheduler-class" class="md-nav__link">
+    Scheduler Class
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-inventoryhourlyscheduler" class="md-nav__link">
+    Example: InventoryHourlyScheduler
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-spaceone-template-pipeline" class="md-nav__link">
+    4. SpaceONE Template Pipeline
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-commit" class="md-nav__link">
-    5. Commit
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-push" class="md-nav__link">
-    6. Push
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-create-a-pull-request" class="md-nav__link">
-    7. Create a pull request
+  <a href="#5-worker-development" class="md-nav__link">
+    5. Worker Development
   </a>
   
 </li>
@@ -679,61 +759,129 @@
                   
                 
                 
-                  <h1>Getting Started</h1>
+                  <h1>Scheduler & Worker</h1>
                 
-                <p>Development workflow</p>
-<p><img alt="" src="../github_workflow.png" /></p>
-<h3 id="1-fork-in-the-cloud">1. Fork in the cloud<a class="headerlink" href="#1-fork-in-the-cloud" title="Permanent link">#</a></h3>
-<ol>
-<li>Visit https://github.com/spaceone-dev</li>
-<li>There are lots of repositories. <em>spaceone</em> is top repository. Each micro service has own repository like <em>identity</em>, or <em>inventory</em>.</li>
-<li>Click 'Fork' button (top right) to establish a cloud-based fork.</li>
-</ol>
-<h3 id="2-clone-fork-to-local-storage">2. Clone fork to local storage<a class="headerlink" href="#2-clone-fork-to-local-storage" title="Permanent link">#</a></h3>
-<p>Create your clone:</p>
-<pre><code class="sh">git clone https://github.com/$user/spaceone.git
-cd  spaceone
+                <p>Scheduler and Worker Development Pattern</p>
+<h2 id="1-architecture">1. Architecture<a class="headerlink" href="#1-architecture" title="Permanent link">#</a></h2>
+<p>The Scheduler and Worker are two separated micro-services which communicates each other via queue.</p>
+<p>Scheduler specifies task(a.k.a. SpaceONE Pipeline Template) then push task to queue.
+Worker gets task from queue then execute task.</p>
+<p><img alt="" src="../scheduler_worker_design_pattern.png" /></p>
+<h2 id="2-example-configuration">2. Example configuration<a class="headerlink" href="#2-example-configuration" title="Permanent link">#</a></h2>
+<h3 id="scheduler-configuration">Scheduler configuration<a class="headerlink" href="#scheduler-configuration" title="Permanent link">#</a></h3>
+<p>The Scheduler needs <strong>queue</strong> and scheduler function which create scheduling task.</p>
+<p>This is <strong>inventory-scheduler</strong> configuration.</p>
+<pre><code>      QUEUES:
+        collector_q:
+          backend: spaceone.core.queue.redis_queue.RedisQueue
+          host: redis
+          port: 6379
+          channel: collector
+
+
+      SCHEDULERS:
+        hourly_scheduler:
+          backend: spaceone.inventory.scheduler.inventory_scheduler.InventoryHourlyScheduler
+          queue: collector_q
+          interval: 1
+          minute: ':01'
+
+      TOKEN: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVC....
 </code></pre>
 
-<h3 id="3-branch">3. Branch<a class="headerlink" href="#3-branch" title="Permanent link">#</a></h3>
-<p>Add upstream:</p>
-<pre><code class="sh">git remote add upstream https://github.com/spaceone-dev/spaceone.git
+<h3 id="worker-configuration">Worker configuration<a class="headerlink" href="#worker-configuration" title="Permanent link">#</a></h3>
+<p>The Worker needs <strong>queue</strong> and worker function which executes scheduling task.</p>
+<p>This is <strong>inventory-worker</strong> configuration.</p>
+<pre><code>      QUEUES:
+        collector_q:
+          backend: spaceone.core.queue.redis_queue.RedisQueue
+          host: redis
+          port: 6379
+          channel: collector
 
-# Never push to upstream master
-git remote set-url --push upstream no_push
-
-# Confirm that your remotes make sense:
-git remote -v
+      WORKERS:
+        collector_worker:
+          backend: spaceone.core.scheduler.worker.BaseWorker
+          queue: collector_q
+          pool: 1
 </code></pre>
 
-<p>Get your local master up to date:</p>
-<pre><code class="sh">git fetch upstream
-git checkout master
-git rebase upstream/master
+<h2 id="3-start-scheduler-or-worker">3. Start Scheduler or Worker<a class="headerlink" href="#3-start-scheduler-or-worker" title="Permanent link">#</a></h2>
+<p>Base on configuration, server can be scheduler or worker. The commandline for Scheduler or Worker is same.</p>
+<pre><code class="bash">spaceone scheduler &lt;service name&gt;
 </code></pre>
 
-<p>Branch from it:</p>
-<pre><code class="sh">git checkout -b myfeature
+<p>For example, inventory Worker is started by <strong>spaceone scheduler spaceone.inventory -c /opt/inventory.yml</strong>.</p>
+<p>You can start Scheduler and Worker together, if your configuration includes <strong>QUEUES, SCHEDULERS</strong> and <strong>WORKERS</strong>.</p>
+<h2 id="4-scheduler-development">4. Scheduler Development<a class="headerlink" href="#4-scheduler-development" title="Permanent link">#</a></h2>
+<h3 id="scheduler-class">Scheduler Class<a class="headerlink" href="#scheduler-class" title="Permanent link">#</a></h3>
+<p>Scheduler class is defined at spaceone/core/schduler/scheduler.py at python-core repository.</p>
+<p><img alt="" src="../scheduler_class.png" /></p>
+<p>If you want to create new scheduler, inherit BaseScheduler class. Each implemented class should implement <strong>create_task()</strong>.
+The <strong>create_task()</strong> function is automatically called in-time which is specified at Scheduler configuration.</p>
+<p>For example, if you inherit HourlyScheduler, the create_task is called in every N hours.
+If you inherit IntervalScheduler, the create_task is called in every N seconds.</p>
+<h3 id="example-inventoryhourlyscheduler">Example: InventoryHourlyScheduler<a class="headerlink" href="#example-inventoryhourlyscheduler" title="Permanent link">#</a></h3>
+<p>InventoryHourlyScheduler is called at every 01 minutes like from 00:01, 01:01 to 23:01.
+The <strong>create_task()</strong> should create list of STP(SpaceONE Template Pipeline).</p>
+<p>file: <inventory>/src/spaceone/inventory/scheduler/inventory_scheduler.py</p>
+<pre><code class="python">    def create_task(self):
+        schedules = self.list_schedules()
+        result = []
+        for schedule in schedules:
+            stp = self._create_job_request(schedule)
+            result.append(stp)
+        return result
 </code></pre>
 
-<h3 id="5-commit">5. Commit<a class="headerlink" href="#5-commit" title="Permanent link">#</a></h3>
-<p>Commit your changes.</p>
-<pre><code class="sh">git add &lt;changed files&gt;
-git commit -s
+<h2 id="4-spaceone-template-pipeline">4. SpaceONE Template Pipeline<a class="headerlink" href="#4-spaceone-template-pipeline" title="Permanent link">#</a></h2>
+<p>You have to specify task based one STP(SpaceONE Tempalte Pipeline).
+The single STP has following rule:</p>
+<pre><code class="python">{
+  &quot;name&quot;: Pipeline Name,
+  &quot;version&quot;: &quot;v1&quot;,
+  &quot;executionEngine&quot;: &quot;BaseWorker&quot;,
+  &quot;stages&quot;: [
+        {
+            &quot;locator&quot;: &quot;SERVICE&quot; | &quot;MANAGER&quot; | &quot;CONNECTOR&quot;,     # Calling Object
+            &quot;name&quot; : &quot;XXXXService&quot;,                             # Calling Object name
+            &quot;metadata&quot; : {Metadata(dict)},                      # Metadata, Service Call needs metadata 
+            &quot;method&quot;: Method name,                              # method name
+            &quot;params&quot;: { Real Parameter }                        # parameter
+        },
+        {
+            ...
+        }
+    ]
+}
 </code></pre>
 
-<p>Likely you go back and edit/build/test some more then 'commit --amend' in a few cycles.</p>
-<h3 id="6-push">6. Push<a class="headerlink" href="#6-push" title="Permanent link">#</a></h3>
-<p>When ready to review (or just to establish an offsite backup of your work),
-push your branch to your fork on <code>github.com</code>:</p>
-<pre><code class="sh">git push -f origin myfeature
+<p>For example, if you want to call <strong>collect</strong> API in inventory, the STP has </p>
+<pre><code class="python">{
+  &quot;name&quot;: &quot;Inventory Collect&quot;,
+  &quot;version&quot;: &quot;v1&quot;,
+  &quot;executionEngine&quot;: &quot;BaseWorker&quot;,
+  &quot;stages&quot;: [
+        {
+            &quot;locator&quot;: &quot;SERVICE&quot;, 
+            &quot;name&quot; : &quot;CollectorService&quot;,
+        &quot;metadata&quot;: {'token': 'xxxxxx', 'user_id': 'yyyyy'},
+            &quot;method&quot;: &quot;collect&quot;,
+            &quot;params&quot;: {'params': {
+                    'collector_id': 'xxxxx',
+                'collector_mode': 'ALL',
+                'filter': {},
+                'domain_id': 'dom-xxxx'
+                }
+            }
+    }
+    ]
+}
 </code></pre>
 
-<h3 id="7-create-a-pull-request">7. Create a pull request<a class="headerlink" href="#7-create-a-pull-request" title="Permanent link">#</a></h3>
-<ol>
-<li>Visit your fork at <code>https://github.com/$user/spaceone</code></li>
-<li>Click the <code>Crete pull request</code> button</li>
-</ol>
+<h2 id="5-worker-development">5. Worker Development<a class="headerlink" href="#5-worker-development" title="Permanent link">#</a></h2>
+<p>BaseWorker is just executing STP.
+For example, if inventory-worker get <strong>Inventory Collect</strong> task from Queue. It execute method based on specification.</p>
                 
               
               
@@ -752,7 +900,7 @@ push your branch to your fork on <code>github.com</code>:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../api/getting-started/" title="Getting Started" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../getting-started/" title="Getting Started" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -767,13 +915,13 @@ push your branch to your fork on <code>github.com</code>:</p>
           </a>
         
         
-          <a href="../scheduler_and_worker/" title="Scheduler & Worker" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../coding-style/" title="Coding Style" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Scheduler & Worker
+                Coding Style
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
